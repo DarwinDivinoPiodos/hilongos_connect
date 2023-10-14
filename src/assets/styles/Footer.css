@@ -1,0 +1,186 @@
+.hilongos-connect-logo {
+  width: 2em;
+}
+
+.container-hilongos-connect-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-hilongos-one {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-image: linear-gradient(#0607207e, #9dd10c); */
+}
+.one-footer-hilongos-text {
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 51;
+}
+.one-footer-hilongos-text p:nth-child(1) {
+  font-size: 3em;
+  letter-spacing: 0px;
+  line-height: 1em;
+  font-weight: bold;
+}
+.one-footer-hilongos-text p:nth-child(2) {
+  font-size: 1.2em;
+}
+.one-footer-hilongos-phone {
+  width: 50%;
+  position: relative;
+  min-height: 50vh;
+}
+.footer-hilongos-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-footer-hilongos-logo-name {
+  display: flex;
+  justify-content: center;
+  /* background-color: gray; */
+  /* border: 10px white solid; */
+  margin-top: 4em;
+  min-height: 50vh;
+  align-items: center;
+}
+
+.hilongos-connect-footer-about {
+  width: 30% !important;
+  /* background-color: yellow !important; */
+  display: flex;
+  flex-direction: column;
+}
+.text-marketing {
+  color: gray !important;
+}
+.p-tag-hilongos-grow {
+  font-size: 2em;
+  letter-spacing: 0px;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.p-tag-hilongos-grow span {
+  color: #54cdff;
+}
+.hilongos-connect-footer-about-two {
+  width: 70%;
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-evenly;
+}
+
+.hilongos-connect-footer-about-two section p:nth-child(1) {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+.hilongos-connect-footer-about-two section p {
+  color: gray;
+}
+.two-footer-hilongos-allrights {
+  display: flex !important;
+  border-top: 1px solid rgba(114, 114, 114, 0.596);
+  justify-content: space-between;
+  min-height: 20vh;
+  align-items: center;
+}
+
+.two-footer-hilongos-allrights section:nth-child(1) {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.two-footer-hilongos-allrights section:nth-child(2) {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+.two-footer-hilongos-allrights section:nth-child(1) p {
+  margin: 0px;
+}
+
+.hilongos-mobile-style {
+  position: absolute;
+  bottom: 0; /* Position the image at the bottom */
+  /* You can also add other styles to your image if needed */
+  width: 80%;
+}
+
+.footer-main-container {
+  background-color: #060720;
+  color: white;
+  font-family: "Poppins", sans-serif !important;
+}
+.footer-hilongos-one-background {
+  /* background-image: linear-gradient(#0607207e, #a3a3a3); */
+  min-height: 50vh;
+  border-bottom: 1px solid rgba(114, 114, 114, 0.596);
+}
+
+.start-sending-hilongos-connect {
+  width: fit-content;
+  padding: 10px 30px !important;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 100px;
+  display: block;
+  border: 0px;
+  font-size: 1em;
+  font-weight: 500;
+  box-shadow: 0px 0px 14px -7px #54cdff;
+  background-image: linear-gradient(
+    45deg,
+    #1b96f8 0%,
+    #54cdff 51%,
+    #1b96f8 100%
+  );
+  letter-spacing: 2px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.start-sending-hilongos-connect:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.start-sending-hilongos-connect:active {
+  transform: scale(0.95);
+}
+
+.overlay-background-hilongos-connect {
+  background-image: linear-gradient(to top, #060720, rgba(157, 209, 12, 0));
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0);
+  min-height: inherit;
+}
+
+.hilongos_connect_logo {
+  width: 3em;
+}
+
+.two-footer-hilongos-allrights section .icon-social-links {
+  font-size: 2em;
+  margin: 4px;
+  color: gray;
+}
+
+.two-footer-hilongos-allrights {
+  color: gray;
+  font-size: 14px;
+}
