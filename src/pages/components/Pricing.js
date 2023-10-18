@@ -4,23 +4,16 @@ import "../../assets/styles/Pricing.css";
 
 function Pricing() {
   return (
-    <div>
-      <section>
-        <p>Pricing that’s just right</p>
-      </section>
-      <section>
-        <p>
-          Get a 7 day free trial. Then compare and choose a plan that's right
-          for you.
+    <div className="">
+      <section className="">
+        <p className="sub-head-hilongos">Pricing that's just right</p>
+        <p className="pricing-hilongos-subhead">
+          Get a 7 day free trial. Then compare and choose<br></br> a plan that's
+          right for you.
         </p>
       </section>
-      <section>
+      <section className="Media-Card-Pricing">
         <MediaCard />
-        <MediaCard />
-        <MediaCard />
-      </section>
-      <section>
-        <p>Compare All Plans</p>
       </section>
     </div>
   );

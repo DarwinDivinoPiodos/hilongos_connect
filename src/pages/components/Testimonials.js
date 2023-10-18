@@ -9,7 +9,7 @@ function Testimonials() {
           Not convinced? Hear from <br></br> our customers{" "}
         </p>
       </section>
-      <section className="hilongos-clientslogo-holder"></section>
+      <section className=""></section>
     </div>
   );
 }

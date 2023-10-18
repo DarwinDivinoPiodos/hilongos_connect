@@ -1,0 +1,18 @@
+.head-for-all-hilongos {
+  color: #1b96f8;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.sub-head-hilongos {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.1em;
+}
+
+.email-main-container {
+  min-height: 70vh;
+}
