@@ -62,38 +62,61 @@ function Footer() {
               </p>
             </section>
             <section className="hilongos-connect-footer-about-two">
-              {" "}
-              <section classname="hilongos-connect-footer-product">
+              <section className="hilongos-connect-footer-product">
                 <p>Product</p>
-                <p>Shopify</p>
-                <p>Pricing</p>
-                <p>Blog</p>
+                <a href="#" className="hover-effect">
+                  Shopify
+                </a>
+                <a href="#" className="hover-effect">
+                  Pricing
+                </a>
+                <a href="#" className="hover-effect">
+                  Blog
+                </a>
               </section>
-              <section classname="hilongos-connect-footer-company">
-                {" "}
+              <section className="hilongos-connect-footer-company">
                 <p>Company</p>
-                <p>About Us</p>
-                <p>Career</p>
+                <a href="#" className="hover-effect">
+                  About Us
+                </a>
+                <a href="#" className="hover-effect">
+                  Career
+                </a>
               </section>
-              <section classname="hilongos-connect-footer-support">
-                {" "}
+              <section className="hilongos-connect-footer-support">
                 <p>Support</p>
-                <p>Terms</p>
-                <p>Privacy</p>
-                <p>TCPA</p>
+                <a href="#" className="hover-effect">
+                  Terms
+                </a>
+                <a href="#" className="hover-effect">
+                  Privacy
+                </a>
+                <a href="#" className="hover-effect">
+                  TCPA
+                </a>
               </section>
             </section>
           </section>
           <section className="two-footer-hilongos-allrights">
             <section>
               <p>Hilongos Connect Ltd. © 2023. All Rights Reserved.</p>
-              <p>Privacy Policy</p>
-              <p>Data Processing Agreement</p>
+              <a href="#" className="hover-effect">
+                Privacy Policy
+              </a>{" "}
+              <a href="#" className="hover-effect">
+                Data Processing Agreement
+              </a>
             </section>
-            <section>
-              <FacebookIcon className="icon-social-links" />
-              <LinkedInIcon className="icon-social-links" />
-              <GitHubIcon className="icon-social-links" />
+            <section className="social-media-icons">
+              <a href="https://www.facebook.com" className="icon-link">
+                <FacebookIcon className="icon-social-links" />
+              </a>
+              <a href="https://www.linkedin.com" className="icon-link">
+                <LinkedInIcon className="icon-social-links" />
+              </a>
+              <a href="https://www.github.com" className="icon-link">
+                <GitHubIcon className="icon-social-links" />
+              </a>
             </section>
           </section>
         </section>

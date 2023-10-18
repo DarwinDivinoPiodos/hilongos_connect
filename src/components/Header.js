@@ -3,9 +3,31 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import hilongos_connect_logo from "../assets/images/hilongos-connect-logo.PNG";
 import "../assets/styles/Header.css";
+import React, { useState, useEffect } from "react";
 function Header() {
+  const [navbarSticky, setNavbarSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setNavbarSticky(true);
+      } else {
+        setNavbarSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar
+      bg="light"
+      expand="lg"
+      className={`navbar ${navbarSticky ? "fixed-top" : "initial-hide"}`}
+    >
       <Container className="container-hilongos-links">
         <Navbar.Brand href="/" className="navbar-parent-img-p">
           <img

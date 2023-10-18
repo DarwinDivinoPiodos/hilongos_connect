@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Banner from "./components/Banner";
 import TrustedClients from "./components/TrustedClients";
 import Introduction from "./components/Introduction";
+import Introduction2 from "./components/Introduction2";
 import Benefits from "./components/Benefits";
 import Footer from "../components/Footer";
 import Testimonials from "./components/Testimonials";
@@ -18,15 +19,19 @@ function Home() {
         <Header />
       </section>
       <Container className="home-main-container">
-        {" "}
         <section className="hilongos-connect-banner">
           <Banner />
         </section>
         <section className="hilongos-connect-clients">
           <TrustedClients />
         </section>
-        <section className="hilongos-connect-intro">
-          <Introduction />
+      </Container>{" "}
+      <section className="hilongos-connect-intro">
+        <Introduction />
+      </section>
+      <Container className="home-main-container">
+        <section className="hilongos-connect-introv2">
+          <Introduction2 />
         </section>
         <section className="hilongos-connect-benefits">
           <Benefits />{" "}

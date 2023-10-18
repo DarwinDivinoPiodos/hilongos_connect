@@ -1,0 +1,79 @@
+.head-for-all-hilongos {
+  color: #1b96f8;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.sub-head-hilongos {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.1em;
+}
+.blog-main-container {
+  margin-top: 8em;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  grid-template-rows: auto auto; /* 2 rows */
+}
+
+.grid-item {
+}
+
+.grid-item-wide {
+  grid-column: span 2; /* This will make the element span 2 columns */
+}
+
+.text-and-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-and-image-container-small {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-main-container {
+  overflow: auto;
+}
+
+.blog-name-title {
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.blog-name-title-small {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.blog-title-text-style {
+  font-weight: 700;
+}
+
+.blog-title-text-style-blue {
+  color: #1b96f8;
+}
+
+.border-left {
+  /* border-left: 2px solid blue; */
+  padding-left: 2em;
+}
+.padding-right {
+  padding-right: 2em;
+}
+
+.border-right {
+  /* border-right: 2px solid blue; */
+  padding-right: 2em;
+  margin-top: 2em;
+}
+.padding-left {
+  padding-left: 2em;
+  margin-top: 2em;
+}

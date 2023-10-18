@@ -83,6 +83,11 @@
 .hilongos-connect-footer-about-two section p {
   color: gray;
 }
+.hilongos-connect-footer-about-two section a {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+}
 .two-footer-hilongos-allrights {
   display: flex !important;
   border-top: 1px solid rgba(114, 114, 114, 0.596);
@@ -183,4 +188,14 @@
 .two-footer-hilongos-allrights {
   color: gray;
   font-size: 14px;
+}
+.hover-effect {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.hover-effect:hover {
+  color: white; /* Change the color to white on hover */
+  text-decoration: underline; /* Add an underline effect on hover */
 }

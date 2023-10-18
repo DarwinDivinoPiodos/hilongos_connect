@@ -1,3 +1,4 @@
+/* Header.css */
 .hilongos-connect-logo {
   width: 2em;
 }
@@ -8,7 +9,7 @@
 }
 
 .navbar-parent-img-p p {
-  margin: 0px;
+  margin: 0;
   font-family: "AR One Sans", sans-serif;
   font-weight: 900;
 }
@@ -48,7 +49,6 @@
 
 .login-hilongos-connect:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -63,4 +63,20 @@
 
 .nav-links-container-parent {
   justify-content: flex-end !important;
+}
+/* Header.css */
+/* ... your existing styles ... */
+
+.navbar {
+  transition: opacity 0.3s;
+  opacity: 1; /* Initially fully visible */
+}
+
+.navbar.fixed-top {
+  opacity: 1; /* Keep it fully visible when fixed */
+}
+
+.navbar.initial-hide {
+  opacity: 0; /* Initially fully transparent */
+  pointer-events: none; /* Disable clicks when not visible */
 }
