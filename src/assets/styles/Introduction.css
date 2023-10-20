@@ -14,13 +14,13 @@
 }
 
 .watch-hilongos-works-button {
-  background-color: #c2fbd7;
+  background-color: #b9dbf7;
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
-    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
-    rgba(44, 187, 99, 0.15) 0 16px 32px;
-  color: green;
+  box-shadow: rgba(44, 187, 180, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 177, 187, 0.15) 0 1px 2px, rgba(44, 187, 180, 0.15) 0 2px 4px,
+    rgba(44, 165, 187, 0.15) 0 4px 8px, rgba(44, 158, 187, 0.15) 0 8px 16px,
+    rgba(44, 165, 187, 0.15) 0 16px 32px;
+  color: #1b96f8;
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
@@ -34,24 +34,33 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  position: absolute;
+  /* bottom: 70px; */
+  bottom: -100px;
+  opacity: 0;
 }
 
 .watch-hilongos-works-button:hover {
-  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
-    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
-    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  box-shadow: rgba(44, 187, 180, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 158, 187, 0.25) 0 1px 2px, rgba(44, 170, 187, 0.25) 0 2px 4px,
+    rgba(44, 165, 187, 0.25) 0 4px 8px, rgba(44, 182, 187, 0.25) 0 8px 16px,
+    rgba(44, 158, 187, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
 
 .media-container {
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.media-container-second-ignore {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
-  overflow: hidden;
+  margin-top: 5em;
 }
-
 .introduction-main-container {
   /* background-color: rgba(128, 128, 128, 0.356); */
   width: 100vw;
@@ -69,10 +78,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: inherit;
+  height: 50vh;
   border-radius: 10px;
 }
 
+.youtube-media {
+  transform: scale(1) rotate(7deg);
+  transition: transform 0.2s;
+}
+.youtube-media:hover {
+  transform: rotate(0deg);
+  z-index: 10;
+  transform: scale(1.2);
+}
+
+.youtube-media:hover
+  .video-cover-overlay
+  .button-text-container
+  .watch-hilongos-works-button {
+  position: absolute;
+  bottom: 70px;
+  /* bottom: -100px; */
+  opacity: 1;
+}
+.youtube-media .youtube-media .youtube-media .side-media-one {
+  transform: scale(1) rotate(-3deg);
+}
+.side-media-two {
+  transform: scale(1) rotate(-7deg);
+}
 .how-hilongos-connect-works-div {
   display: flex;
   flex-direction: column;
@@ -91,7 +125,7 @@
   overflow: hidden;
 }
 .video-cover-overlay {
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgba(0, 0, 0, 0.596);
   position: absolute;
   width: 40vw;
   height: inherit;
@@ -101,6 +135,20 @@
   overflow: hidden;
 }
 
+.youtube-media {
+  transform: scale(1) rotate(7deg);
+  transition: all 0.2s;
+}
+.youtube-media:hover {
+  transform: rotate(0deg);
+  z-index: 10;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.youtube-media:hover .video-cover-overlay {
+  background-color: rgba(0, 0, 0, 0.719);
+}
 .button-text-container {
   height: inherit;
   display: flex;
@@ -130,4 +178,7 @@
 }
 .button-container p {
   font-size: 1.3em;
+}
+.button-handler {
+  transform: scale(1.8);
 }

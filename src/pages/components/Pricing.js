@@ -4,8 +4,8 @@ import "../../assets/styles/Pricing.css";
 
 function Pricing() {
   return (
-    <div className="">
-      <section className="">
+    <div className="pricing-main-container">
+      <section className="mb-5">
         <p className="sub-head-hilongos">Pricing that's just right</p>
         <p className="pricing-hilongos-subhead">
           Get a 7 day free trial. Then compare and choose<br></br> a plan that's

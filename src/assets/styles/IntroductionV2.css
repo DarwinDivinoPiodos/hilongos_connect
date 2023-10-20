@@ -1,9 +1,8 @@
 .intro-v2-container {
-  font-size: 1.5em;
   margin-bottom: 8em;
 }
 
 .intro-v2-container p:nth-child(1) {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
 }

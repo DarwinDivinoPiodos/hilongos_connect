@@ -1,9 +1,10 @@
+import React, { useState, useEffect } from "react";
+import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import hilongos_connect_logo from "../assets/images/hilongos-connect-logo.PNG";
 import "../assets/styles/Header.css";
-import React, { useState, useEffect } from "react";
+
 function Header() {
   const [navbarSticky, setNavbarSticky] = useState(false);
 
@@ -22,6 +23,7 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <Navbar
       bg="light"
@@ -46,9 +48,6 @@ function Header() {
           className="nav-links-container-parent"
         >
           <Nav className="nav-links-hilongos-connect">
-            {/* <Nav.Link className="nav-link-header" href="/">
-              Home
-            </Nav.Link> */}
             <Nav.Link className="nav-link-header" href="/about">
               About
             </Nav.Link>
