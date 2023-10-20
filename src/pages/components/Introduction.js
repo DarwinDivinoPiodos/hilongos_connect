@@ -7,10 +7,10 @@ function Introduction() {
     <div className="introduction-main-container">
       <section className="media-container">
         <section className="media-container-second-ignore">
-          <section className="how-hilongos-connect-works side-media-one">
+          <section className="how-hilongos-connect-works side-media-one ">
             <img src={dummy_yet} alt="picture_yet" width="700" />
-            <div className="button-container p-5">
-              <p className="ps-3 ms-3">
+            <div className="button-container p-5 ms-5">
+              <p className="p-handler-introhilongos-connect">
                 Got a process to track? Need to watch stuff move through stages?
                 Hilongos Connect is what you need. It's our unique take on meta.
               </p>
@@ -44,9 +44,17 @@ function Introduction() {
               </div>
             </div>
           </section>
-          <section className="how-hilongos-connect-works side-media-two">
+          <section className="how-hilongos-connect-works side-media-two ">
             <img src={dummy_yet} alt="picture_yet" width="700" />
-          </section>
+            <div className="button-container ">
+              <p className="p-handler-introhilongos-connect-two">
+                Instead of wondering what "70% done" really means, Hilongos
+                Connect charts give you visual, intuitive sense of where
+                projects really stand.
+              </p>
+              <AddCircleOutlineIcon className="button-handler" />
+            </div>
+          </section>{" "}
         </section>
       </section>
     </div>
