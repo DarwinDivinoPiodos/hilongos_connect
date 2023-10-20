@@ -15,9 +15,9 @@
 
 .container-benefits-main-container {
   /* background-color: lightgray; */
-  min-height: 70vh;
+  min-height: 60vh;
   overflow: hidden !important;
-  margin-bottom: 8em;
+  margin-bottom: 5em;
 }
 
 .second-col-container {
@@ -99,4 +99,25 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.unique-card {
+  /* Your existing styles */
+
+  /* Add animation styles */
+  transition: transform 0.3s ease-in-out;
+}
+
+.unique-card:hover {
+  transform: translateY(-5px); /* Adjust the amount of tilt/jump */
+}
+.unique-card {
+  /* Your existing styles */
+
+  transform: translateY(0); /* Initialize position */
+  transition: transform 0.3s ease-in-out;
+}
+
+.unique-card.animated {
+  transform: translateY(-5px); /* Adjust the amount of tilt/jump */
+  transition: transform 0.3s ease-in-out;
 }

@@ -10,7 +10,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 50) {
         setNavbarSticky(true);
       } else {
         setNavbarSticky(false);
@@ -26,9 +26,9 @@ function Header() {
 
   return (
     <Navbar
-      bg="light"
       expand="lg"
       className={`navbar ${navbarSticky ? "fixed-top" : "initial-hide"}`}
+      id="navbar-box-shadow"
     >
       <Container className="container-hilongos-links">
         <Navbar.Brand href="/" className="navbar-parent-img-p">
@@ -48,10 +48,16 @@ function Header() {
           className="nav-links-container-parent"
         >
           <Nav className="nav-links-hilongos-connect">
-            <Nav.Link className="nav-link-header" href="/about">
+            <Nav.Link
+              className="nav-link-header-simple nav-link-header"
+              href="/about"
+            >
               About
             </Nav.Link>
-            <Nav.Link className="nav-link-header" href="/contact-us">
+            <Nav.Link
+              className="nav-link-header nav-link-header-simple"
+              href="/contact-us"
+            >
               Contact Us
             </Nav.Link>
             <Nav.Link

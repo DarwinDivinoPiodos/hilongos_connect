@@ -32,7 +32,7 @@
   border-radius: 100px;
   display: block;
   border: 0px;
-  font-weight: 700;
+  font-weight: 500;
   box-shadow: 0px 0px 14px -7px #54cdff;
   background-image: linear-gradient(
     45deg,
@@ -100,4 +100,40 @@
 
 .navbar.initial-hide {
   top: -100px; /* Keep it hidden when not fixed */
+}
+
+.nav-link-header-simple {
+  position: relative;
+  text-decoration: none;
+  color: #333; /* Change the color to your preferred text color */
+
+  /* Add underline style */
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+
+  /* Transition for smooth animation */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.nav-link-header-simple::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #1b96f8; /* Change the color to your preferred underline color */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link-header:hover {
+  border-color: transparent; /* Hide the default underline */
+}
+
+.nav-link-header-simple:hover::before {
+  width: 100%; /* Expand the underline on hover */
+}
+
+#navbar-box-shadow {
+  box-shadow: 0 6px 30px 0 rgba(18, 23, 34, 0.233);
 }

@@ -1,6 +1,5 @@
 .banner-hilongos-parent {
   display: flex;
-  /* background-color: gray; */
   min-height: 90vh;
   justify-content: center;
   align-items: center;
@@ -151,7 +150,7 @@
 } */
 .button-input-hilongos {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 16px;
   min-height: 40px;
   padding: 20px 14px;
@@ -162,7 +161,7 @@
   border-radius: 100px;
   display: block;
   border: 0px;
-  font-weight: 700;
+  font-weight: 500;
   box-shadow: 0px 0px 14px -7px #54cdff;
   background-image: linear-gradient(
     45deg,

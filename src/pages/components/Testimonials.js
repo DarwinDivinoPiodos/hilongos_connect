@@ -62,27 +62,41 @@ function Testimonials() {
   ];
 
   return (
-    <div className="testimonials-container">
-      {testimonials.map((testimonial, index) => (
-        <div className="testimonial-card" key={index}>
-          <section className="section-first-testimonial-first-row">
-            {" "}
-            <section>
+    <div>
+      <section className="mb-5">
+        <p className="testimonials-main-small">Testimonials</p>
+        <p className="sub-head-hilongos-testimonials">What Clients Say</p>
+        <p className="pricing-hilongos-subhead-testimonials">
+          We place huge value on strong relationships and have seen the benefit
+          they<br></br> bring to our business. Customer feedback is vital in
+          helping us to get it right.
+        </p>
+      </section>
+
+      <div className="testimonials-container">
+        {testimonials.map((testimonial, index) => (
+          <div className="testimonial-card" key={index}>
+            <section className="section-first-testimonial-first-row">
               {" "}
-              <img src={testimonial.profileImg} alt={testimonial.name} />
+              <section>
+                {" "}
+                <img src={testimonial.profileImg} alt={testimonial.name} />
+              </section>
+              <section className="ms-3">
+                {" "}
+                <h3 className="font-weight-name-h3">{testimonial.name}</h3>
+                <p className="testimonial-p-font-size">
+                  {testimonial.username}
+                </p>
+              </section>
             </section>
-            <section className="ms-3">
+            <section className="section-first-testimonial">
               {" "}
-              <h3 className="font-weight-name-h3">{testimonial.name}</h3>
-              <p className="testimonial-p-font-size">{testimonial.username}</p>
+              <p className="feedback-font-color">{testimonial.feedback}</p>
             </section>
-          </section>
-          <section className="section-first-testimonial">
-            {" "}
-            <p className="feedback-font-color">{testimonial.feedback}</p>
-          </section>
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -18,10 +18,13 @@ function Home() {
       <section>
         <Header />
       </section>
-      <Container className="home-main-container">
-        <section className="hilongos-connect-banner">
+      <section className="hilongos-connect-banner">
+        <Container className="home-main-container">
+          {" "}
           <Banner />
-        </section>
+        </Container>
+      </section>
+      <Container className="home-main-container">
         <section className="hilongos-connect-clients">
           <TrustedClients />
         </section>
@@ -33,7 +36,7 @@ function Home() {
         <section className="hilongos-connect-introv2">
           <Introduction2 />
         </section>
-        <section className="hilongos-connect-benefits">
+        <section id="benefits-section" className="hilongos-connect-benefits">
           <Benefits />{" "}
         </section>
         <section className="hilongos-connect-testimonials">
