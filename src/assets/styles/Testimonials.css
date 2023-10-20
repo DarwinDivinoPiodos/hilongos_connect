@@ -1,4 +1,25 @@
 /* YourComponent.css */
+.head-for-all-hilongos-testimonials {
+  color: #1b96f8;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: start;
+}
+
+.sub-head-hilongos-testimonials {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: start;
+  line-height: 1.1em;
+}
+
+.testimonials-main-small {
+  color: #1b96f8;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 .testimonials-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -44,4 +65,14 @@
 }
 .feedback-font-color {
   color: gray;
+}
+.testimonial-card {
+  position: relative;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.testimonial-card:hover {
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg); /* Adjust the tilt angle as needed */
 }

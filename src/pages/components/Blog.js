@@ -14,9 +14,9 @@ function Blog() {
                 HILONGOS CONNECT
               </p>
 
-              <p className="blog-name-title">
+              <a href="#" className="blog-link blog-name-title">
                 The Best of Hilongos Connect,<br></br>October 2023
-              </p>
+              </a>
               <p className="blog-title-text-style">
                 By{" "}
                 <span className="blog-title-text-style-blue">
@@ -24,24 +24,24 @@ function Blog() {
                 </span>
               </p>
             </section>
-            <section>
+            <section className="blog-picture ms-1">
               <img src={pexel1} alt="pexel_one" width="500px" />
             </section>
           </section>
         </div>
         <div className="grid-item left-wide-space border-left">
           <section className="text-and-image-container-small">
-            <section className="me-4">
+            <section className="me-4 blog-picture">
               <img src={pexel2} alt="pexel_one" width="350px" />
             </section>
             <section className="text-main-container-small mt-3">
               <p className="blog-title-text-style blog-title-text-style-blue">
-                RIGHT SMALL
+                HILONGOS CONNECT
               </p>
 
-              <p className="blog-name-title-small">
+              <a href="#" className="blog-link blog-name-title-small">
                 Most Controversial Ad Campaigns
-              </p>
+              </a>
               <p className="blog-title-text-style">
                 By{" "}
                 <span className="blog-title-text-style-blue">
@@ -53,17 +53,17 @@ function Blog() {
         </div>
         <div className="grid-item right-wide-space border-right">
           <section className="text-and-image-container-small">
-            <section className="me-4">
+            <section className="me-4 blog-picture">
               <img src={pexel2} alt="pexel_one" width="350px" />
             </section>
             <section className="text-main-container-small mt-3">
               <p className="blog-title-text-style blog-title-text-style-blue">
-                LEFT SMALL
+                HILONGOS CONNECT
               </p>
 
-              <p className="blog-name-title-small">
+              <a href="#" className="blog-link blog-name-title-small">
                 5 Marketing Tools Every Designer Needs
-              </p>
+              </a>
               <p className="blog-title-text-style">
                 By{" "}
                 <span className="blog-title-text-style-blue">
@@ -75,7 +75,7 @@ function Blog() {
         </div>
         <div className="grid-item-wide padding-left">
           <section className="text-and-image-container">
-            <section className="me-4">
+            <section className="me-4 blog-picture">
               <img src={pexel2} alt="pexel_one" width="500px" />
             </section>
             <section className="text-main-container">
@@ -83,9 +83,9 @@ function Blog() {
                 HILONGOS CONNECT
               </p>
 
-              <p className="blog-name-title">
+              <a href="#" className="blog-link blog-name-title">
                 20 Best New Websites,<br></br> October 2023
-              </p>
+              </a>
               <p className="blog-title-text-style">
                 By{" "}
                 <span className="blog-title-text-style-blue">

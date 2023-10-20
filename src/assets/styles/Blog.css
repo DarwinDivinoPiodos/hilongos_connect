@@ -78,3 +78,14 @@
   padding-left: 2em;
   margin-top: 2em;
 }
+.blog-link {
+  color: #1b1b1bd5; /* Your preferred text color */
+  text-decoration: none; /* Add the underline style */
+
+  transition: all 0.3s;
+}
+
+.blog-link:hover {
+  color: #0f0f0fde; /* Change text color on hover if desired */
+  text-decoration: underline; /* Add the underline style */
+}
