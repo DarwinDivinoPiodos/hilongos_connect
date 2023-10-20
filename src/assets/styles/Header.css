@@ -80,3 +80,24 @@
   opacity: 0; /* Initially fully transparent */
   pointer-events: none; /* Disable clicks when not visible */
 }
+
+/* Header.css */
+/* ... your existing styles ... */
+
+.navbar {
+  position: fixed;
+  top: -100px; /* Initially hide the Navbar above the viewport */
+  width: 100%;
+  z-index: 1000; /* Adjust the z-index as needed */
+  background-color: transparent; /* You can set the background color as needed */
+  transition: top 0.3s;
+}
+
+.navbar.fixed-top {
+  top: 0; /* Show the Navbar at the top when fixed */
+  background-color: #fff; /* You can set the background color as needed */
+}
+
+.navbar.initial-hide {
+  top: -100px; /* Keep it hidden when not fixed */
+}

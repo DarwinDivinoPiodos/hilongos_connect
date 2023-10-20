@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
 import Blog from "./components/Blog";
-import Email from "./components/Email";
+// import Email from "./components/Email";
 function Home() {
   return (
     <div>
@@ -45,9 +45,9 @@ function Home() {
         <section className="hilongos-connect-blog">
           <Blog />
         </section>
-        <section className="hilongos-connect-email">
+        {/* <section className="hilongos-connect-email">
           <Email />{" "}
-        </section>
+        </section> */}
       </Container>
       <section>
         <Footer />

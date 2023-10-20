@@ -1,14 +1,47 @@
-.head-for-all-hilongos {
-  color: #1b96f8;
-  font-size: 1.2em;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-align: center;
+/* YourComponent.css */
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Equal gaps between items */
+  margin: 0 auto; /* Center the grid horizontally */
+  align-content: start; /* Align items at the start of the grid */
 }
 
-.sub-head-hilongos {
-  font-size: 3em;
-  font-weight: 900;
-  text-align: center;
-  line-height: 1.1em;
+.testimonial-card {
+  padding: 30px;
+  box-shadow: 0 70px 104px -20px rgba(33, 55, 103, 0.123);
+  overflow: hidden; /* Hide overflow content */
+  border-radius: 20px;
+}
+
+.testimonial-card img {
+  max-width: 50px; /* Adjust the max width of profile images */
+  border-radius: 50%;
+}
+
+/* You can style the name, username, and feedback text as needed */
+.testimonial-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.testimonial-card p {
+  margin: 10px 0;
+}
+
+.section-first-testimonial-first-row {
+  display: flex;
+  align-items: center;
+}
+
+.font-weight-name-h3 {
+  font-weight: 700;
+}
+
+.testimonial-p-font-size {
+  font-size: 0.9em;
+  color: #1b96f8;
+}
+.feedback-font-color {
+  color: gray;
 }
