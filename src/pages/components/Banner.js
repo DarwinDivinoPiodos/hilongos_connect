@@ -24,6 +24,9 @@ function Banner() {
             <input type="submit" className="submit-btn" />
             <div className="submit-btn-shadow" />
           </div>
+          <button className="button-input-hilongos">
+            Get Started for Free
+          </button>
         </div>
       </section>
       <section className="banner-section-two">

@@ -101,11 +101,87 @@
   /* bottom: -100px; */
   opacity: 1;
 }
-.youtube-media .youtube-media .youtube-media .side-media-one {
-  transform: scale(1) rotate(-3deg);
+.button-handler {
+  transform: scale(2.5);
+  transition: transform 0.6s ease-in-out; /* Add smooth transition */
+  position: absolute;
+  bottom: 80px;
+  cursor: pointer;
+}
+
+.button-handler:hover {
+  transform: scale(3); /* Scale degree a little larger on hover */
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 1em 3em;
+  background: linear-gradient(#000000ef, #1b1b1b7c);
+  height: 100%;
+  color: white;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.button-container p {
+  font-size: 1.3em;
+}
+.button-handler {
+  transform: scale(2.5);
+  transition: transform 0.3s ease-in-out, bottom 0.3s ease-in-out; /* Add smooth transitions for transform and bottom */
+  position: absolute;
+  bottom: -80px;
+  cursor: pointer;
+}
+
+.button-handler:hover {
+  transform: scale(3); /* Scale degree a little larger on hover */
+}
+
+.side-media-one {
+  transform: scale(1) rotate(-5deg);
+  transition: transform 0.5s;
+}
+.side-media-one:hover {
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.side-media-one:hover .button-container {
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.5s;
+  cursor: pointer;
+  opacity: 1;
+}
+.side-media-one:hover .button-container .button-handler {
+  bottom: 80px;
+}
+.p-handler-introhilongos-connect {
+  margin-left: 5em;
+}
+.p-handler-introhilongos-connect-two {
+  margin-right: 5em;
 }
 .side-media-two {
   transform: scale(1) rotate(-7deg);
+  transition: transform 0.5s;
+}
+
+.side-media-two:hover {
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.side-media-two:hover .button-container {
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.5s;
+  cursor: pointer;
+  opacity: 1;
+}
+.side-media-two:hover .button-container .button-handler {
+  bottom: 80px;
 }
 .how-hilongos-connect-works-div {
   display: flex;
@@ -166,19 +242,4 @@
   font-weight: 700;
   line-height: 1.2em;
   overflow: hidden;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding: 1em 3em;
-}
-.button-container p {
-  font-size: 1.3em;
-}
-.button-handler {
-  transform: scale(1.8);
 }
